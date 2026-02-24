@@ -22,6 +22,11 @@
     --primary:#0a5c43;
 }
 
+/* DARK MODE HERO KISMI KOYU HAKİ YEŞİL */
+.dark .hero{
+    background: linear-gradient(135deg,#064025,#0e8c5f,#1a6f44);
+}
+
 body{
     margin:0;
     font-family:Segoe UI;
@@ -212,20 +217,35 @@ footer{
 
 <div class="intro">
 
-<div class="mini" onclick="openModal('budget')">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-<p>Budget</p>
-</div>
+  <div class="mini" onclick="openModal('budget')">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <p>Budget</p>
+  </div>
 
-<div class="mini" onclick="openModal('saving')">
-<img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png">
-<p>Saving</p>
-</div>
+  <div class="mini" onclick="openModal('saving')">
+    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png">
+    <p>Saving</p>
+  </div>
 
-<div class="mini" onclick="openModal('spending')">
-<img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png">
-<p>Smart Spending</p>
-</div>
+  <div class="mini" onclick="openModal('spending')">
+    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png">
+    <p>Smart Spending</p>
+  </div>
+
+  <div class="mini" onclick="openModal('investing')">
+    <img src="https://cdn-icons-png.flaticon.com/512/2649/2649363.png">
+    <p>Investing</p>
+  </div>
+
+  <div class="mini" onclick="openModal('loans')">
+    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331926.png">
+    <p>Loans</p>
+  </div>
+
+  <div class="mini" onclick="openModal('credit')">
+    <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png">
+    <p>Credit</p>
+  </div>
 
 </div>
 </div>
@@ -233,8 +253,6 @@ footer{
 <nav>
 <a onclick="openModal('about')">About Project</a>
 </nav>
-
-<!-- CALCULATOR -->
 
 <div class="calc-section">
 <h2>💰 Try Our Budget Calculator</h2>
@@ -248,8 +266,6 @@ footer{
 </div>
 </div>
 </div>
-
-<!-- ABOUT -->
 
 <div id="about" class="modal">
 <div class="modal-content">
@@ -280,8 +296,6 @@ By the end of the project, participants become more confident, responsible, and 
 </div>
 </div>
 
-<!-- MINI MODALS -->
-
 <div id="budget" class="modal">
 <div class="modal-content">
 <span class="close" onclick="closeModal('budget')">✖</span>
@@ -303,6 +317,30 @@ By the end of the project, participants become more confident, responsible, and 
 <span class="close" onclick="closeModal('spending')">✖</span>
 <h2>Smart Spending</h2>
 <p>Students learn to make conscious purchasing decisions and avoid impulsive spending.</p>
+</div>
+</div>
+
+<div id="investing" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('investing')">✖</span>
+<h2>Investing</h2>
+<p>Investing allows students to understand how money can grow over time through stocks, savings accounts, and other financial tools. They learn the importance of risk, return, and long-term planning.</p>
+</div>
+</div>
+
+<div id="loans" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('loans')">✖</span>
+<h2>Loans</h2>
+<p>Learning about loans teaches students about borrowing, interest, and repayment responsibilities. It helps them understand the consequences of debt and the importance of borrowing wisely.</p>
+</div>
+</div>
+
+<div id="credit" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('credit')">✖</span>
+<h2>Credit</h2>
+<p>Credit education shows students how credit cards, scores, and financial history affect their future. They learn responsible usage and how to maintain good credit habits.</p>
 </div>
 </div>
 
